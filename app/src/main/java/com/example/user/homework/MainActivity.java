@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
-                intent.setAction("lincyu.NOTIFICATION");
+                intent.setAction("NOTIFICATION");
                 String msg = et_msg.getEditableText().toString();
                 intent.putExtra("KEY_MSG", msg);
                 sendBroadcast(intent);
